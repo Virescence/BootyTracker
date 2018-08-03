@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div>
+        {% for island in island_list %}
+        <p>{{ island.name }},  <b>{{ island.resources }}</b></p>
+        {% endfor %}
+    </div>
+{% endblock %}
+
